@@ -103,17 +103,17 @@
 
         // CONFIG (Keep your own)
         const firebaseConfig = { 
-            apiKey: "AIzaSyDIDlnsjU80luMXAO_JsRJQTMHPhEVpbQs", 
-            authDomain: "my-chat-project-4e376.firebaseapp.com", 
-            projectId: "my-chat-project-4e376", 
-            appId: "1:264696350288:web:8c0367e6dce7c5f5517355"
+            apiKey: "AIzaSyBwknrSZWYYfv8GO4mz2UbZQmTaxS7kGYw", 
+            authDomain: "boot-8d7d7.firebaseapp.com", 
+            projectId: "boot-8d7d7", 
+            appId: "1:572694384608:web:cce8c1faef1dd3105e6585"
         };
 
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
         const db = getFirestore(app);
         let me = null, peer = null;
-        const ADMIN_EMAIL = "admin@gmail.com"; 
+        const ADMIN_EMAIL = "adminhun@gmail.com"; 
 
         // Sound and Login Logic...
         const notifySound = new Audio('https://assets.mixkit.co/active_storage/sfx/2354/2354-preview.mp3');
@@ -348,4 +348,5 @@
         window.closeChat = () => { peer = null; document.getElementById('chat-window').classList.remove('open'); };
     </script>
 </body>
+
 </html>
